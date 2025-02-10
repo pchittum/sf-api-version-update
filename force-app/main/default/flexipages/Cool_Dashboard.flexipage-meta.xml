@@ -61,36 +61,6 @@
                 <identifier>flexipage_reportChart</identifier>
             </componentInstance>
         </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>bodyFields</name>
-                    <value>Title,Email,Phone</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>geoFields</name>
-                    <value>Street,City,State,Country,PostalCode</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>object</name>
-                    <value>Lead</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>title</name>
-                    <value>Steroid Live Map</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>titleField</name>
-                    <value>Name</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>topicName</name>
-                    <value>leadLiveView</value>
-                </componentInstanceProperties>
-                <componentName>SLL:LiveMapView</componentName>
-                <identifier>SLL_LiveMapView</identifier>
-            </componentInstance>
-        </itemInstances>
         <name>column2</name>
         <type>Region</type>
     </flexiPageRegions>

@@ -50,36 +50,6 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
-                    <name>bodyFields</name>
-                    <value>Type__c,Date__c</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>geoFields</name>
-                    <value>City__c,State__c</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>object</name>
-                    <value>Trip__c</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>title</name>
-                    <value>Trip Map</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>titleField</name>
-                    <value>Name</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>topicName</name>
-                    <value>leadLiveView</value>
-                </componentInstanceProperties>
-                <componentName>SLL:LiveMapView</componentName>
-                <identifier>SLL_LiveMapView</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
                     <name>reportName</name>
                     <value>Trip_Types</value>
                 </componentInstanceProperties>
