@@ -4,11 +4,6 @@
     <label>StreamingGenericMessageDisplay</label>
     <packageVersions>
         <majorNumber>1</majorNumber>
-        <minorNumber>12</minorNumber>
-        <namespace>SLL</namespace>
-    </packageVersions>
-    <packageVersions>
-        <majorNumber>1</majorNumber>
         <minorNumber>11</minorNumber>
         <namespace>sf_chttr_apps</namespace>
     </packageVersions>
