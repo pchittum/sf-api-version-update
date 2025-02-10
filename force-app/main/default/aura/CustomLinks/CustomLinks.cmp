@@ -1,7 +1,7 @@
 <aura:component implements="force:appHostable,flexipage:availableForAllPageTypes" access="global">
 
-    <aura:attribute name="labelslist" type="[]" default="['Developers','Trailhead']"/>
-    <aura:attribute name="linkslist" type="[]" default="['http://developer.salesforce.com','http://trailhead.salesforce.com']"/>
+    <aura:attribute name="labelslist" type="String[]" default="['Developers','Trailhead']"/>
+    <aura:attribute name="linkslist" type="String[]" default="['http://developer.salesforce.com','http://trailhead.salesforce.com']"/>
 
     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
 
