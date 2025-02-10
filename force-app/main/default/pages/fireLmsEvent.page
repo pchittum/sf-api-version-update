@@ -1,0 +1,20 @@
+<apex:page lightningStylesheets="true">
+
+    <!-- tried including api.js and it gives this error → Uncaught ReferenceError: Sfdc is not defined-->
+    <button onclick="publishLeadData()"> Publish Msg</button>
+       
+    <script>
+
+        var LEAD_DATA_CHANNEL = "{!$MessageChannel.LeadDataMessageChannel__c}";
+
+        function publishLeadData() {
+
+            const message = {
+                recordId: '001XXXXXXXXXXX',
+                name: "Testing"
+            };
+            sforce.one.publish(LEAD_DATA_CHANNEL, message);
+        }
+      
+    </script>
+    </apex:page>

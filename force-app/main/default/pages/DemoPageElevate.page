@@ -1,0 +1,14 @@
+<apex:page standardController="Account" recordSetVar="details">
+    
+   <apex:pageBlock >
+    
+      <apex:pageBlockTable value="{!details}" var="item">
+       	
+          <apex:column value="{!item.Name}"/>
+          <apex:column value="{!item.billingcountry}"/>
+          <apex:column value="{!item.type}"/>
+       
+       </apex:pageBlockTable>
+    </apex:pageBlock>
+    
+</apex:page>

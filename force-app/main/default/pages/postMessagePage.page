@@ -1,0 +1,25 @@
+<apex:page >
+
+
+    <div>
+        iFramed Page
+    </div>
+
+    <div id="text"></div>
+
+    <script>
+    
+    const lightningHost = 'blixtar-dev-ed.lightning.force.com';
+    
+    window.addEventListener('message', handleMessage, false);
+
+    function handleMessage(event){
+        if (event.origin !== `https://${lightningHost}`) return; 
+
+        document.querySelector('#text').textContent = `
+            ${event.data}
+        `;
+    }
+    </script>
+
+</apex:page>

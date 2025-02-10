@@ -1,0 +1,15 @@
+<apex:page >
+    <apex:includeLightning />
+    
+    <div id="lightning"/>
+    
+    <script>
+    	$Lightning.use("c:getOut", function(){
+        	$Lightning.createComponent("c:TestComponent", {}, "lightning", function(cmp){
+            	console.log('component created');
+            });
+        
+        });
+    </script>
+    
+</apex:page>

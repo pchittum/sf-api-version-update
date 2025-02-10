@@ -1,0 +1,7 @@
+<aura:component controller="ContactsControllerReact">
+    
+    <ltng:require scripts="{!$Resource.ReactSearch}" afterScriptsLoaded="{!c.reactInit}"/>
+
+    <div aura:id="container"/>
+    
+</aura:component>

@@ -1,0 +1,18 @@
+<apex:page standardController="Account" docType="html-5.0" >
+    <apex:includeLightning />
+    
+    <div id="lightning"/>
+    
+    <script>
+    	$Lightning.use("c:SimpleDonutAppWrapper", function(){
+        	$Lightning.createComponent("c:SimpleDonutChart", {chartLabel: "Order Chart", 
+                                                              chartColor: "#36adf6",
+                                                              chartUnitsThreshold: 30,
+                                                              sourceType: "orderValue"}, "lightning", function(cmp){
+            	console.log('component created');
+            });
+        
+        });
+    </script>
+    
+</apex:page>

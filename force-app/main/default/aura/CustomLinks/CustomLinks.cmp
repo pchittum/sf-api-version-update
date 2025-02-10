@@ -1,0 +1,14 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes" access="global">
+
+    <aura:attribute name="labelslist" type="[]" default="['Developers','Trailhead']"/>
+    <aura:attribute name="linkslist" type="[]" default="['http://developer.salesforce.com','http://trailhead.salesforce.com']"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <header>Custom Links</header>
+
+    <div aura:id="links">
+        links will go here
+    </div>
+
+</aura:component>

@@ -1,0 +1,25 @@
+<aura:component controller="AccountViewEditService" implements="force:appHostable" >
+    
+    <aura:attribute name="accountRecord" type="Account" default="{ sobjectType: 'Account' }"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <!-- this throws an error -->
+    <force:inputField value="{!v.accountRecord.Name}"/>
+    <force:inputField value="{!v.accountRecord.Type}"/>
+    <force:inputField value="{!v.accountRecord.AnnualRevenue}"/>
+    <force:inputField value="{!v.accountRecord.BillingCountry}"/>
+
+<!-- these do too   
+    <force:outputField value="{!v.accountRecord.Name}"/>
+    <force:outputField value="{!v.accountRecord.Type}"/>
+    <force:outputField value="{!v.accountRecord.AnnualRevenue}"/>
+    <force:outputField value="{!v.accountRecord.BillingCountry}"/>
+
+    these do not
+    <ui:inputText value="{!v.accountRecord.Name}"/>
+    <ui:inputSelect value="{!v.accountRecord.Type}"/>
+    <ui:inputNumber value="{!v.accountRecord.AnnualRevenue}"/>
+    <ui:inputText value="{!v.accountRecord.BillingCountry}"/>
+-->    
+</aura:component>

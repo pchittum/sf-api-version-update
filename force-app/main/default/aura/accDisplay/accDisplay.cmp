@@ -1,0 +1,32 @@
+<aura:component implements="force:hasRecordId,flexipage:availableForRecordHome">
+
+    <aura:attribute name="recordId" type="String" description="Id of record to be loaded on page. Declared here, but actually implicit with force:hasRecordId interface"/>
+    <aura:attribute name="record" type="Object" description="The record object to be displayed"/>
+    <aura:attribute name="accountRecord" type="Object" description="A simplified view record object to be displayed"/>
+    <aura:attribute name="recordError" type="String" description="An error message bound to force:recordData"/>
+    
+    <force:recordData aura:id="frd"
+                    recordId="{!v.recordId}"
+                    fields="Id, Name, Industry, Description, Phone"
+                    mode="VIEW"
+                    targetError="{!v.recordError}"
+                    targetFields="{!v.accountRecord}"/>
+
+    <div class="Record Details"> 
+        <lightning:card iconName="standard:account" title="{!v.accountRecord.Name}" >
+            <div class="slds-p-horizontal--small">
+                <p class="slds-text-heading--small">
+                    <lightning:formattedText title="Industry" value="{!v.accountRecord.Industry}" />
+                </p>
+                <p class="slds-text-heading--small">
+                    <lightning:formattedText title="Description" value="{!v.accountRecord.Description}" />
+                </p>
+                <p class="slds-text-heading--small">
+                    <lightning:formattedPhone title="Phone" value="{!v.accountRecord.Phone}" />
+                </p>
+            </div>
+        </lightning:card>
+    </div>
+                        
+
+</aura:component>

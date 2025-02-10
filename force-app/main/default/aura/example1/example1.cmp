@@ -1,0 +1,19 @@
+<aura:component implements="force:hasRecordId,flexipage:availableForRecordHome">
+
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="targetFields" type="Object"/>    
+
+    <force:recordData aura:id="therecord"
+                    recordId="{!v.recordId}"
+                    mode="VIEW"
+                    fields="Id, Name, Type"
+                    targetFields="{!v.targetFields}"/>
+
+    <div class="recordName">
+        <p class="slds-text-heading--medium">
+            <lightning:formattedText title="Record Name" value="{!v.targetFields.Name}"/>
+            <lightning:formattedText title="Record Type" value="{!v.targetFields.Type}"/>            
+        </p>
+    </div>
+
+</aura:component>

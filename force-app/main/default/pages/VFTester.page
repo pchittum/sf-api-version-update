@@ -1,0 +1,5 @@
+<apex:page standardController="Order">
+    
+    <apex:relatedList list="OrderItems"/>
+    
+</apex:page>

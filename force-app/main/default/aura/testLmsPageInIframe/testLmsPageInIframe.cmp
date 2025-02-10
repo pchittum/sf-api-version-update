@@ -1,0 +1,12 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    
+    <aura:attribute name="recordValue" type="String" />
+    <lightning:messageChannel
+                              type="LeadDataMessageChannel__c"
+                              onMessage="{! c.handleLeadDataMessage }"
+                              
+                              />
+    <iframe src="/apex/fireLmsEvent?isdtp=p1" frameborder="0" />
+    
+    {! v.recordValue }
+</aura:component>

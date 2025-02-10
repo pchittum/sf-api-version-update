@@ -1,0 +1,43 @@
+<apex:page controller="TapController" showHeader="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" >
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        
+    <apex:stylesheet value="{!URLFOR($Resource.SLDS0121,'assets/styles/salesforce-lightning-design-system-vf.css')}"/>
+    <apex:form >
+        <div class="slds">
+            
+        <div class="slds-page-header" role="banner">
+          <div class="slds-grid">
+            <div class="slds-col slds-has-flexi-truncate">
+              <div class="slds-media">
+                <div class="slds-media__figure">
+                  <svg aria-hidden="true" class="slds-icon slds-icon--large slds-icon-standard-user">
+                    <use xlink:href="{!URLFOR($Resource.SLDS0121,'/assets/icons/standard-sprite/svg/symbols.svg#user')}"></use>
+                  </svg>
+                </div>
+                <div class="slds-media__body">
+                  <p class="slds-text-heading--label">IFTTT</p>
+                  <div class="slds-grid">
+                    <h1 class="slds-text-heading--medium slds-m-right--small slds-truncate slds-align-middle" title="Light Philips Hue">Light Philips Hue</h1>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+  
+        </div>
+        
+            
+            <div class="slds-grid slds-grid--frame">
+                <div class="slds-col slds-size--1-of-1">  
+                    <div class="slds-container--center slds-container--large">
+                        <apex:commandButton styleClass="slds-button slds-button--brand slds-m-around--medium slds-max-small-buttons--stretch" action="{!createTap}" value="Tap"/>
+                    </div>    
+                </div>
+            </div>    
+        </div>
+    </apex:form>
+            </html>
+
+</apex:page>
